@@ -7,15 +7,7 @@
 
 .flex-container {
   display: flex;
-  
   justify-content: flex-end;
-}
-.menu-btn {
-  display: flex;
-  font-size: 28px;
-  background: none;
-  border: none;
-  margin-right: -60px;
 }
 
 ul {
@@ -34,6 +26,37 @@ a {
 li{
     list-style: none;
 }
+.menu-btn {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+  nav ul {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 60px;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 
 .bg-image {
   background-image: url("../images/Rectangle\ 1.jpg");

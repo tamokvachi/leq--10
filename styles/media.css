@@ -70,8 +70,8 @@
  }
 }
 @media  screen and (max-width:2560px) {
-    ul{
-      min-width: 320px;
+    a{
+      min-width: 375px;
     max-width: 2550px;
 
     }
